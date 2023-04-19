@@ -1,0 +1,88 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.container{
+  text-align: center;
+  padding: 5rem 10rem;
+  background-color: rgb(2, 77, 73);
+}
+.bg {
+  border-radius: 10px;
+  background-color: rgb(8, 8, 8);
+  box-shadow:5px 10px 18px rgba(255, 0, 0, 0.527) ;
+}
+.bg:hover {animation: zoom-in-zoom-out 1s ease ;}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.close{
+ text-align: right;
+ padding-right: 3rem;
+ padding-bottom: 4rem;
+ padding-top: 2rem;
+}
+.plot{
+  text-align: justify;
+}
+.images img {
+  height: 310px;
+  width: 250px;
+}
+.images{
+  margin-right: 3.5rem;
+}
+.detail{
+display: flex;
+flex-direction: row-reverse;
+}
+.details{
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+h4{
+  padding-bottom:2rem ;
+}
+.movie-title{
+font-size: 40px;
+font-weight: 700;
+text-align: center;
+}
+/* Media query for iPhone 13 */
+@media only screen and (max-width: 390px) {
+.container{
+  padding: 3rem 2rem;
+}
+.close{
+  padding-bottom: 2rem;
+}
+.images{
+  margin-right: 2.5rem;
+}
+.detail{
+ flex-wrap: wrap;
+}
+.movie-title{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+.details{
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+}
